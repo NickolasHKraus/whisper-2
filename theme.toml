@@ -1,12 +1,18 @@
-name = "Whisper"
+name = "Whisper 2"
 license = "MIT"
-licenselink = "https://github.com/JugglerX/hugo-whisper-theme/blob/master/LICENSE"
-description = "Whisper is a minimal documentation theme built for Hugo. The design and functionality is intentionally minimal."
-homepage = "https://github.com/jugglerx/hugo-whisper-theme"
-tags = ["documentation","responsive","minimal","clean","bootstrap","zerostatic"]
-features = ["docs"]
-min_version = 0.51
+licenselink = "https://github.com/NickolasHKraus/whisper-2/blob/master/LICENSE"
+description = "A minimalist documentation theme for Hugo. Whisper 2 is hyper-performant and fully open-source.",
+homepage = "https://github.com/NickolasHKraus/whisper-2"
+tags = []
+features = []
+min_version = 0.55.4
 
 [author]
+  name = "Nickolas Kraus"
+  homepage = "https://github.com/NickolasHKraus"
+  repo = "https://github.com/NickolasHKraus/whisper-2"
+
+[original]
   name = "Robert Austin"
-  homepage = "https://www.zerostatic.io"
+  homepage = "https://github.com/JugglerX"
+  repo = "https://github.com/JugglerX/hugo-whisper-theme"
