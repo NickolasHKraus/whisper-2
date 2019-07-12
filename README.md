@@ -1,27 +1,22 @@
-# Hugo Whisper Theme
+# Whisper 2
 
-Whisper is a minimal documentation theme built for Hugo. The design and functionality is intentionally minimal.
+A minimalist documentation theme for Hugo. Whisper 2 is hyper-performant and fully open-source.
 
-[Live Demo](https://hugo-whisper.netlify.com/) |
-[Zerostatic Themes](https://www.zerostatic.io/theme/hugo-whisper/)
-
-![Hugo Whisper Theme screenshot](https://github.com/JugglerX/hugo-whisper-theme/blob/master/images/screenshot-with-border.png)
-
-## Theme features
+## Theme Features
 
 ### Content Types
 
-- Docs (Markdown)
 - Homepage
+- Documentation (Markdown)
 
 ### Content Management
 
-- This theme generates documentation from markdown files located in `content/docs`
-- The "Home" page is not documentation, it can be used to introduce your project etc.
+- This theme generates documentation from Markdown files located in `content/documentation`.
+- The homepage is not documentation. It can be used to introduce your project.
 
 ### Features
 
-- Beautiful and clean typography for all semantic HTML elements
+- Beautiful and clean typography for all semantic HTML elements.
 
 ### SCSS
 
@@ -31,72 +26,55 @@ Whisper is a minimal documentation theme built for Hugo. The design and function
 
 ### Speed
 
-- 100/100 Google Lighthouse speed score
-- 21KB without images ⚡
-- Vanilla JS only
+- 100/100 Google Lighthouse speed score.
+- 21KB without images.
+- Vanilla JS only.
 
 ### Menu
 
-- Responsive mobile menu managed in `config.toml`
+- Responsive mobile menu managed in `config.toml`.
 
 ### Content
 
-- Documentation examples included, using all markdown syntax
+- Documentation examples included, using all Markdown syntax.
 
-# Installation
+## Installation
 
-To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
+To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/).
 
 ### Check Hugo Version
 
 This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the `Hugo Extended` version installed. If you are not using the extended version this theme will not not compile.
 
-```
-hugo version
+```bash
+$ hugo version
+Hugo Static Site Generator v0.55.4/extended darwin/amd64 BuildDate: unknown
 ```
 
 ### Create a new Hugo site
 
 ```
-hugo new site mynewsite
+hugo new site <my-site>
 ```
 
-This will create a fresh Hugo site in the folder `mynewsite`.
+This will create a fresh Hugo site in `<my-site>`.
 
 ### Install theme
 
-Copy or git clone this theme into the sites themes folder `mynewsite/themes`
+Copy or git clone this theme into the sites themes folder `<my-site>/themes`
 
 #### Install with Git
 
-```
-cd mynewsite
-git clone https://github.com/jugglerx/hugo-whisper-theme.git themes/hugo-whisper-theme
-```
-
-#### Install from .zip file
-
-You can download the .zip file located here https://github.com/JugglerX/hugo-whisper-theme/archive/master.zip.
-
-Extract the downloaded .zip inside the `themes` folder. Rename the extracted folder from `hugo-whisper-theme-master` -> `hugo-whisper-theme`. You should end up with the following folder structure `mynewsite/themes/hugo-whisper-theme`
-
-### Add example content
-
-Copy the entire contents of the `mynewsite/themes/hugo-whisper-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`
-
-To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
-
-```
-cp -a themes/hugo-whisper-theme/exampleSite/. .
+```bash
+git submodule add git@github.com:NickolasHKraus/whisper-2.git themes/whisper-2
 ```
 
 ### Update config.toml
 
-After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in `mynewsite/config.toml`
+After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL` and `theme` values in `<my-site>/config.toml`
 
-```
+```toml
 baseURL = "/"
-themesDir = "themes"
 theme = "hugo-whisper-theme"
 ```
 
@@ -104,16 +82,14 @@ theme = "hugo-whisper-theme"
 
 After installing the theme for the first time, generate the Hugo site.
 
-You run this command from the root folder of your Hugo site ie `mynewsite/`
-
-```
+```bash
 hugo
 ```
 
-For local development run Hugo's built-in local server.
+For local development, run Hugo's built-in local server:
 
-```
+```bash
 hugo server
 ```
 
-Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
+Navigate to [localhost:1313](http://localhost:1313) to view your site.
